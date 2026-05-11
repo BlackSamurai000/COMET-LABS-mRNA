@@ -1,0 +1,666 @@
+ts · Equity‑by‑design (CPV/pPVI)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section id="problem" class="container" style="padding: 60px 24px;">
+    <h2 style="color: #1B365D; margin-bottom: 16px;">🧠 The triple barrier of brain metastases</h2>
+    <p>Brain metastases affect <strong>20–40%</strong> of patients with advanced cancer. Three obstacles block nearly all therapies:</p>
+    <div class="card-grid">
+      <div class="card"><div class="icon-placeholder">🔒</div><h3>Blood‑brain barrier</h3><p>>95% of small molecules and ~100% of biologics cannot reach the tumour.</p></div>
+      <div class="card"><div class="icon-placeholder">🧬</div><h3>Tumour heterogeneity</h3><p>HER2‑low/negative clones escape mono‑therapies (T‑DXd).</p></div>
+      <div class="card"><div class="icon-placeholder">❄️</div><h3>Immunologically “cold” niche</h3><p>Low T‑cell infiltration + immunosuppressive microglia/macrophages.</p></div>
+    </div>
+    <p style="margin-top: 16px;"><strong>Critical gap:</strong> No integrated pipeline combines AI‑driven neoantigen discovery, brain‑targeted mRNA delivery and concurrent team science for brain metastases.</p>
+  </section>
+
+  <!-- Relay Race -->
+  <section id="relay" style="background: #F8F9FA; padding: 60px 0;">
+    <div class="container">
+      <h2 style="color: #1B365D;">🏃‍♂️ Relay Race Protocol (concurrent framework)</h2>
+      <p>Four specialised teams operate in parallel with standardised handoffs and a closed‑learning loop.</p>
+      <div class="card-grid">
+        <div class="card"><div class="icon-placeholder">📊</div><h3>Team 1 · Data</h3><p>WES/RNA‑seq, HLA typing, equity pre‑screen → <strong>Data bundle</strong></p></div>
+        <div class="card"><div class="icon-placeholder">🤖</div><h3>Team 2 · AI</h3><p>Ensemble neoantigen prediction (23 features) + mRNA/PNA design → <strong>Digital dossier</strong></p></div>
+        <div class="card"><div class="icon-placeholder">🧪</div><h3>Team 3 · Wet‑lab</h3><p>PDOs, T‑cell assays, PDX models → <strong>Validation report</strong></p></div>
+        <div class="card"><div class="icon-placeholder">⚙️</div><h3>Team 4 · Project lead</h3><p>Orchestration, learning loop, regulatory strategy → <strong>Integrated dashboard</strong></p></div>
+      </div>
+      <p><strong>Closed‑loop learning</strong> – validation data (TP/FP/FN/TN) retrains the AI model every sprint. <br> 📈 <em>4‑week sprints vs 14‑week linear timeline.</em></p>
+    </div>
+  </section>
+
+  <!-- Digital Core (AI) -->
+  <section id="digitalcore" class="container" style="padding: 60px 24px;">
+    <h2 style="color: #1B365D;">⚙️ Digital core – ensemble AI pipeline (23 features)</h2>
+    <div class="card-grid">
+      <div class="card"><strong>Binding affinity</strong> (NetMHCpan, MHCflurry) <br> <strong>Clonality</strong> (CCF >0.85) <br> <strong>Expression</strong> (TPM>1) <br> <strong>Brain specificity</strong> (normal brain TPM) <br> <strong>Safety</strong> (human proteome homology)</div>
+      <div class="card"><strong>Architecture:</strong> XGBoost + Random Forest + Neural Network → logistic regression meta‑learner → <strong>Composite Immunogenicity Score (CIS 0‑1)</strong></div>
+      <div class="card"><strong>HLA equity pre‑screen (3 layers)</strong><br>① Antigen‑gene frequencies<br>② CPV (cumulative population coverage)<br>③ pPVI (immunogenicity‑weighted coverage) → <strong>Equity scorecard</strong></div>
+    </div>
+    <p>Expected performance: <strong>AUC‑ROC >0.85</strong> (primary tumours) , <strong>>0.75</strong> (brain metastases). Equity threshold CPV ≥60% for all populations.</p>
+  </section>
+
+  <!-- Stop & Go conjugate -->
+  <section id="stopgo" style="background: #F0F4F8; padding: 60px 0;">
+    <div class="container">
+      <h2 style="color: #1B365D;">🔬 The ‘Stop & Go’ conjugate (mRNA‑LNP‑PNA)</h2>
+      <div class="card-grid">
+        <div class="card"><div class="icon-placeholder">⏹️</div><h3>“Stop” (PNA)</h3><p>HER2‑targeting peptide nucleic acid → mRNA knockdown → apoptosis → releases tumour antigens.</p></div>
+        <div class="card"><div class="icon-placeholder">▶️</div><h3>“Go” (mRNA)</h3><p>Polyneoantigen mRNA (5 clonal neoantigens, AAY linkers, m1Ψ) → MHC presentation → T‑cell priming.</p></div>
+        <div class="card"><div class="icon-placeholder">🧪</div><h3>Brain‑targeted LNP</h3><p>Angiopep‑2 functionalised (LRP1 transcytosis), co‑encapsulates mRNA + PNA. Size 70‑100 nm.</p></div>
+      </div>
+      <p><strong>Three‑phase MoA:</strong> ① BBB crossing (0‑24h) ② “Stop” + “Go” execution (1‑7d) ③ Epitope spreading & heterogeneous tumour clearance (7‑28d).</p>
+      <p style="margin-top: 12px"><em>Synergy: PNA‑induced apoptosis feeds antigen into mRNA‑primed immune response → self‑amplifying loop.</em></p>
+    </div>
+  </section>
+
+  <!-- Validation roadmap -->
+  <section id="validation" class="container" style="padding: 60px 24px;">
+    <h2 style="color: #1B365D;">📋 Phase‑gated validation roadmap + closed‑loop learning</h2>
+    <div class="timeline-phase">
+      <div class="phase"><strong>🔬 Phase I (4‑6 wk)</strong><br>In silico benchmark (TCGA + BrainMetShare) → AUC‑ROC >0.75 ⇒ proceed</div>
+      <div class="phase"><strong>🧫 Phase II (8‑12 wk)</strong><br>pMHC binding, ELISpot, cytotoxicity → >50% top‑10 validated ⇒ proceed</div>
+      <div class="phase"><strong>🐁 Phase III (12‑24 wk)</strong><br>PDO + PDX (humanised mice) → survival benefit >50% (p<0.01) ⇒ IND‑ready</div>
+    </div>
+    <div class="card" style="margin-top: 16px;">
+      <strong>🔄 TP/FP/TN/FN classification → model retraining → +19% AUC over 4 sprints</strong><br>
+      Each validation experiment improves the AI core (feature reweighting, new features, safety filters).
+    </div>
+  </section>
+
+  <!-- Equity & publications / collaboration -->
+  <section id="equity" style="background: #F8F9FA; padding: 60px 0;">
+    <div class="container">
+      <h2 style="color: #1B365D;">🌍 HLA equity framework + policy recommendations</h2>
+      <p>Current neoantigen tools are Eurocentric (CPV<sub>AFR</sub> ~30‑45%). Our three‑layer framework forces transparency and mitigation.</p>
+      <div class="card-grid">
+        <div class="card"><strong>📊 CPV (Cumulative Population Coverage)</strong><br>1‑∏(1‑f<sub>i</sub>) → target ≥60% for all populations.</div>
+        <div class="card"><strong>⚖️ pPVI (immunogenicity‑weighted)</strong><br>Σ(w<sub>i</sub>·f<sub>i</sub>)/Σw<sub>i</sub> → prevents high‑CIS/rare‑allele neglect.</div>
+        <div class="card"><strong>🛠️ Mitigation strategies</strong><br>promiscuous peptides, expanded epitope sets, ancestry‑aware ranking, affordable hardware (TMT).</div>
+      </div>
+      <p><strong>Policy ask:</strong> Journals → mandatory CPV tables. Regulators → equity thresholds for approval. Funders → diversity mandates.</p>
+    </div>
+  </section>
+
+  <!-- publications / resources -->
+  <section id="publications" class="container" style="padding: 60px 24px;">
+    <h2 style="color: #1B365D;">📄 Blueprint papers (draft series)</h2>
+    <ul style="columns: 2; list-style: none; padding-left: 0;">
+      <li>✓ 1. Relay Race Protocol (operational framework)</li>
+      <li>✓ 2. Ensemble AI pipeline + equity pre‑screen</li>
+      <li>✓ 3. Stop & Go conjugate design</li>
+      <li>✓ 4. HLA equity framework (3‑layer)</li>
+      <li>✓ 5. Validation roadmap & learning loops</li>
+      <li>✓ 6. Architecting the future (synthesis)</li>
+      <li>✓ 7. TMT + Blueprint (global health)</li>
+    </ul>
+    <p style="margin-top: 16px;"><strong>⬇️ Full thesis blueprint (100+ pages) available on request.</strong> <br> <a href="#" class="btn-secondary" style="display: inline-block; margin-top: 8px;">📥 Download integrated blueprint (PDF)</a> <em style="margin-left: 16px;">(placeholder – link will be added)</em></p>
+  </section>
+
+  <!-- Collaborate -->
+  <section id="collaborate" style="background: #eef5fc; padding: 60px 0;">
+    <div class="container">
+      <h2 style="color: #1B365D;">🤝 Join the consortium – we are seeking</h2>
+      <div class="card-grid">
+        <div class="card"><strong>🧑‍🏫 Supervisor (neuro‑oncology / AI / nanomedicine)</strong><br>To guide preclinical translation and secure institutional affiliation.</div>
+        <div class="card"><strong>🧬 Clinical collaborators</strong><br>Access to brain metastasis biopsies, PDOs, and/or humanised PDX models.</div>
+        <div class="card"><strong>💰 Funders & industry partners</strong><br>Non‑dilutive grants, equity‑free support, or co‑development (LNP, MS data generation).</div>
+      </div>
+      <div style="background: white; border-radius: 24px; padding: 32px; margin-top: 24px;">
+        <h3>✉️ Contact / express interest</h3>
+        <p><strong>Email:</strong> <a href="tetteynissi399@gmail.com">your.email@university.edu</a> (replace with your address)</p>
+        <p><strong>GitHub / ORCID / LinkedIn (coming soon)</strong> – placeholder links.</p>
+        <p><em>We reply within 48h. Full draft thesis, slide deck and funding prospectus available under NDA/CC‑BY.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 24px;">
+        <div><strong>🧬 Architecting the Future</strong><br>Blueprint v2.0 – seeking supervision & funding</div>
+        <div>
+          <a href="#">GitHub</a> · <a href="#">PDF blueprint</a> · <a href="mailto:your.email@university.edu">Email</a>
+        </div>
+      </div>
+      <hr style="margin: 32px 0 24px; border-color: #2c4f6e;">
+      <p style="font-size: 0.85rem;">© 2025 [Your Full Name]. This work is licensed under CC BY‑NC 4.0. <br> Figures and diagrams are placeholders; full resolution images available upon request.</p>
+    </div>
+  </footer>
+</main>
+
+<!-- simple smooth scroll behavior is already set in CSS -->
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blueprint | mRNA-LNP-PNA Pipeline for Brain Metastases</title>
+  <meta name="description" content="Integrated digital-experimental pipeline for AI-driven neoantigen discovery, mRNA-LNP-PNA 'Stop & Go' conjugate design, and equitable translation for brain metastases.">
+  <meta property="og:title" content="Architecting the Future – mRNA Blueprint for Brain Metastases">
+  <meta property="og:description" content="Relay Race Protocol, Ensemble AI (23 features), Stop&Go conjugate, and validation roadmap for equitable brain metastasis treatment.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', 'Open Sans', system-ui, -apple-system, sans-serif;
+      background-color: #ffffff;
+      color: #1a2a3a;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Montserrat:wght@500;600;700&display=swap');
+
+    h1, h2, h3, .nav-links a, .chapter-title {
+      font-family: 'Montserrat', 'Inter', sans-serif;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Navigation */
+    .navbar {
+      background: white;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+      background: rgba(255,255,255,0.95);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 24px;
+      max-width: 1280px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #1B365D;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #1f3a4b;
+      font-weight: 500;
+      transition: color 0.2s;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a:hover {
+      color: #008080;
+    }
+
+    /* Buttons */
+    .btn-primary {
+      background-color: #1B365D;
+      color: white;
+      padding: 10px 24px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      transition: background 0.2s, transform 0.1s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      background-color: #0f2a4a;
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: #1B365D;
+      border: 1.5px solid #1B365D;
+      padding: 9px 23px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.2s;
+      display: inline-block;
+    }
+
+    .btn-secondary:hover {
+      background-color: #1B365D;
+      color: white;
+    }
+
+    .btn-outline-light {
+      background-color: transparent;
+      color: #1B365D;
+      border: 1.5px solid #1B365D;
+      padding: 8px 20px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #eef5fc 0%, #ffffff 100%);
+      padding: 60px 0;
+    }
+
+    .hero-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      max-width: 800px;
+    }
+
+    .badge {
+      background: #e0f0f0;
+      color: #006666;
+      padding: 6px 14px;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: inline-block;
+      width: fit-content;
+    }
+
+    /* Cards */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+      margin: 40px 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: 1px solid #eef2f5;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1);
+    }
+
+    .icon-placeholder {
+      width: 48px;
+      height: 48px;
+      background: #eef2fa;
+      border-radius: 16px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    /* Section styles */
+    .section-dark {
+      background: #F8F9FA;
+      padding: 60px 0;
+    }
+
+    .section-light {
+      background: white;
+      padding: 60px 0;
+    }
+
+    .section-blue-light {
+      background: #eef5fc;
+      padding: 60px 0;
+    }
+
+    h2 {
+      color: #1B365D;
+      margin-bottom: 24px;
+      font-size: 1.8rem;
+    }
+
+    h3 {
+      color: #1f4a6e;
+      margin-bottom: 16px;
+      font-size: 1.3rem;
+    }
+
+    /* Timeline */
+    .timeline-phase {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: space-between;
+      margin: 40px 0;
+    }
+
+    .phase {
+      flex: 1;
+      background: #f8fafc;
+      border-radius: 20px;
+      padding: 20px;
+      border-left: 5px solid #008080;
+    }
+
+    /* Team cards */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin: 30px 0;
+    }
+
+    .team-card {
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .team-icon {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #0f2a3f;
+      color: #cbd5e1;
+      padding: 48px 0 24px;
+      margin-top: 60px;
+    }
+
+    .footer a {
+      color: #9ab3c8;
+      text-decoration: none;
+    }
+
+    /* Figure placeholder */
+    .figure-placeholder {
+      background: #f0f4f8;
+      border-radius: 16px;
+      padding: 40px;
+      text-align: center;
+      margin: 30px 0;
+      border: 1px dashed #1B365D;
+      color: #1B365D;
+      font-style: italic;
+    }
+
+    /* Tables */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    .data-table th, .data-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .data-table th {
+      background-color: #1B365D;
+      color: white;
+    }
+
+    /* Responsive */
+    @media (max-width: 800px) {
+      .nav-links {
+        gap: 12px;
+        font-size: 0.8rem;
+      }
+      .timeline-phase {
+        flex-direction: column;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#" class="logo">🧠 C.O.M.E.T. LABS | BrainMet Blueprint</a>
+    <div class="nav-links">
+      <a href="#problem">Problem</a>
+      <a href="#relay">Relay Race</a>
+      <a href="#digitalcore">AI Core</a>
+      <a href="#stopgo">Stop&Go</a>
+      <a href="#validation">Validation</a>
+      <a href="#equity">Equity</a>
+      <a href="#gaps">Gaps</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="badge">📄 PhD Thesis Blueprint · Seeking Supervision & Funding</div>
+        <h1 style="font-size: 2.8rem; line-height: 1.2;">Architecting the Future</h1>
+        <p style="font-size: 1.2rem; color: #2c5a6e;">An integrated digital-experimental pipeline for mRNA-LNP-PNA therapeutics targeting heterogeneous brain metastases</p>
+        <p><strong>Relay Race Protocol · Ensemble AI (23 features) · Stop&Go conjugate · Closed-loop validation · Equity-by-Design (CPV/pPVI)</strong></p>
+        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <a href="#contact" class="btn-primary">🤝 Join the Consortium</a>
+          <a href="#contact" class="btn-secondary">📄 Request Blueprint PDF</a>
+        </div>
+        <p style="margin-top: 16px; color: #3e6b7e;">✨ 4× throughput · +19% AUC over 4 sprints · First-in-class "Stop & Go" conjugate</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Affiliations -->
+  <section style="background: white; padding: 20px 0; border-bottom: 1px solid #eef2f5;">
+    <div class="container">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px;">
+        <div><strong>C.O.M.E.T. LABS</strong> (Center for Optimized Molecular Engineering & Therapeutics) – Start-up (founding stage)</div>
+        <div>MD/PhD Candidate | Faculty of Medicine | Seeking Academic Affiliation</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section id="problem" class="section-light">
+    <div class="container">
+      <h2>🧠 The Triple Barrier of Brain Metastases</h2>
+      <p>Brain metastases affect <strong>20–40%</strong> of patients with advanced cancer. Treatment is profoundly limited by three intersecting barriers:</p>
+      <div class="card-grid">
+        <div class="card"><div class="icon-placeholder">🔒</div><h3>Blood-Brain Barrier</h3><p>>95% of small molecules and nearly all biologics cannot reach the tumour (Arvanitis et al., 2020).</p></div>
+        <div class="card"><div class="icon-placeholder">🧬</div><h3>Tumour Heterogeneity</h3><p>HER2-low/negative subclones escape monotherapies like T-DXd (Ross et al., 2022; Brastianos et al., 2015).</p></div>
+        <div class="card"><div class="icon-placeholder">❄️</div><h3>Immunologically "Cold" Niche</h3><p>Limited T-cell infiltration, immunosuppressive microglia/macrophages (Klemm et al., 2020).</p></div>
+      </div>
+      <div class="figure-placeholder">
+        📊 Figure 1.1: The Perfect Storm – Brain with padlock (BBB), mixed cells (heterogeneity), few T-cells (cold niche). Arrows from primary tumour (breast) to brain.
+      </div>
+      <p><strong>Critical Gap:</strong> No integrated pipeline combines AI-driven neoantigen discovery, brain-targeted mRNA delivery, and concurrent team science for brain metastases.</p>
+    </div>
+  </section>
+
+  <!-- Relay Race Protocol -->
+  <section id="relay" class="section-dark">
+    <div class="container">
+      <h2>🏃‍♂️ The Relay Race Protocol (Chapter 3)</h2>
+      <p>A concurrent, team-based framework replacing linear bottlenecks with standardized handoffs and closed-loop learning.</p>
+      <div class="card-grid">
+        <div class="card"><div class="icon-placeholder">📊</div><h3>Team 1: Data</h3><p>WES/RNA-seq, HLA typing, equity pre-screen → <strong>Standardized Data Bundle</strong></p></div>
+        <div class="card"><div class="icon-placeholder">🤖</div><h3>Team 2: AI</h3><p>Ensemble neoantigen prediction (23 features), mRNA/PNA design → <strong>Digital Vaccine Dossier</strong></p></div>
+        <div class="card"><div class="icon-placeholder">🧪</div><h3>Team 3: Wet-Lab</h3><p>PDOs, T-cell assays, PDX models → <strong>Validation Report</strong></p></div>
+        <div class="card"><div class="icon-placeholder">⚙️</div><h3>Team 4: Project Lead</h3><p>Orchestration, learning loop, regulatory strategy → <strong>Integrated Dashboard</strong></p></div>
+      </div>
+      <div class="figure-placeholder">
+        📊 Figure 3.1: Relay Race Protocol – Four-team circle with handoff arrows and central learning loop arrow.
+      </div>
+      <p><strong>Closed-loop learning:</strong> Validation data (TP/FP/TN/FN) retrains AI models every sprint. <em>4-week sprints vs. 14-week linear timeline.</em></p>
+    </div>
+  </section>
+
+  <!-- Digital Core -->
+  <section id="digitalcore" class="section-light">
+    <div class="container">
+      <h2>⚙️ Digital Core – Ensemble AI Pipeline (Chapter 4)</h2>
+      <p><strong>23-feature vector</strong> integrating binding affinity, clonality, expression, brain specificity, and safety.</p>
+      <div class="card-grid">
+        <div class="card"><strong>Binding affinity:</strong> NetMHCpan %Rank, IC50, MHCflurry %Rank</div>
+        <div class="card"><strong>Clonality:</strong> Cancer Cell Fraction (CCF >0.85 prioritized)</div>
+        <div class="card"><strong>Expression:</strong> Gene TPM >1, mutant allele expression</div>
+        <div class="card"><strong>Brain specificity:</strong> Normal brain TPM, CNS gene ontology</div>
+        <div class="card"><strong>Safety:</strong> Human proteome homology filter</div>
+      </div>
+      <div class="figure-placeholder">
+        📊 Figure 4.2: Ensemble Architecture – XGBoost + Random Forest + Neural Network → Logistic Regression Meta-Learner → Composite Immunogenicity Score (CIS 0-1)
+      </div>
+      <p><strong>Expected performance:</strong> AUC-ROC >0.85 (primary tumours), >0.75 (brain metastases).</p>
+    </div>
+  </section>
+
+  <!-- Stop & Go Conjugate -->
+  <section id="stopgo" class="section-blue-light">
+    <div class="container">
+      <h2>🔬 The "Stop & Go" Conjugate (Chapter 5)</h2>
+      <p>A convergent mRNA-LNP-PNA therapeutic in a single brain-targeted LNP.</p>
+      <div class="card-grid">
+        <div class="card"><div class="icon-placeholder">⏹️</div><h3>“Stop” (PNA)</h3><p>HER2-targeting peptide nucleic acid → mRNA knockdown → apoptosis → releases tumour antigens.</p></div>
+        <div class="card"><div class="icon-placeholder">▶️</div><h3>“Go” (mRNA)</h3><p>Polyneoantigen mRNA (5 clonal neoantigens, AAY linkers, m1Ψ) → MHC presentation → T-cell priming.</p></div>
+        <div class="card"><div class="icon-placeholder">🧪</div><h3>Brain-Targeted LNP</h3><p>Angiopep-2 functionalised (LRP1 transcytosis), co-encapsulates mRNA + PNA. Size 70-100 nm.</p></div>
+      </div>
+      <div class="figure-placeholder">
+        📊 Figure 5.1: LNP with mRNA (green), PNA (red), Angiopep-2 ligands (blue)
+      </div>
+      <div class="figure-placeholder">
+        📊 Figure 5.4: Three-phase MoA: ① BBB crossing (0-24h) ② “Stop” + “Go” execution (1-7d) ③ Epitope spreading & heterogeneous tumour clearance (7-28d)
+      </div>
+      <p><strong>Synergy:</strong> PNA-induced apoptosis feeds antigen into mRNA-primed immune response → self-amplifying loop.</p>
+    </div>
+  </section>
+
+  <!-- Validation Roadmap -->
+  <section id="validation" class="section-dark">
+    <div class="container">
+      <h2>📋 Validation Roadmap (Chapter 6)</h2>
+      <div class="timeline-phase">
+        <div class="phase"><strong>🔬 Phase I (4-6 wk)</strong><br>In silico benchmark (TCGA + BrainMetShare) → AUC-ROC >0.75</div>
+        <div class="phase"><strong>🧫 Phase II (8-12 wk)</strong><br>pMHC binding, ELISpot, cytotoxicity → >50% top-10 validated</div>
+        <div class="phase"><strong>🐁 Phase III (12-24 wk)</strong><br>PDO + PDX (humanised mice) → survival benefit >50% (p<0.01)</div>
+      </div>
+      <div class="figure-placeholder">
+        📊 Figure 6.1: Phase-gated validation funnel with feedback arrows
+      </div>
+      <div class="figure-placeholder">
+        📊 Figure 6.5: Closed-loop learning cycle: AI → Predictions → Experiments → TP/FP/TN/FN → Model Update
+      </div>
+      <div class="card" style="margin-top: 16px;">
+        <strong>🔄 Learning Loop Impact:</strong> +19% AUC over 4 sprints (0.72 → 0.78 → 0.83 → 0.86)
+      </div>
+    </div>
+  </section>
+
+  <!-- Equity Framework -->
+  <section id="equity" class="section-light">
+    <div class="container">
+      <h2>🌍 HLA Population Equity Framework (Paper 4)</h2>
+      <p>Current neoantigen tools are Eurocentric. Our <strong>three-layer framework</strong> forces transparency and mitigation.</p>
+      <div class="card-grid">
+        <div class="card"><strong>Layer 1: Antigen-gene</strong><br>Population-specific mutation frequencies</div>
+        <div class="card"><strong>Layer 2: CPV</strong><br>1-∏(1-f_i) → target ≥60% for all populations</div>
+        <div class="card"><strong>Layer 3: pPVI</strong><br>Σ(w_i×f_i)/Σw_i → immunogenicity-weighted coverage</div>
+      </div>
+      <div class="figure-placeholder">
+        📊 Figure 4.4: Equity Scorecard – EUR 68% (PASS), AFR 31% (FAIL), EAS 48% (CAUTION)
+      </div>
+      <p><strong>Mitigation strategies:</strong> Add promiscuous peptides, expand epitope sets, ancestry-aware ranking, affordable hardware (TMT).</p>
+      <p><strong>Policy ask:</strong> Journals → mandatory CPV tables. Regulators → equity thresholds for approval. Funders → diversity mandates.</p>
+    </div>
+  </section>
+
+  <!-- Expert Gaps -->
+  <section id="gaps" class="section-dark">
+    <div class="container">
+      <h2>🔍 Explicit Knowledge Gaps & Required Expertise (Chapter 7.1)</h2>
+      <table class="data-table">
+        <thead>
+          <tr><th>Gap Domain</th><th>Specific Need</th><th>Required Expertise</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>A. Computational Immunology & AI</td><td>Brain metastasis immunopeptidomics (MS) data; CNS immune rules</td><td>Mass Spectrometry Immunopeptidomicist; Computational Neuro-Immunologist</td></tr>
+          <tr><td>B. Nanomedicine & Delivery</td><td>Co-encapsulation optimization; in vivo BBB targeting validation</td><td>LNP Formulation Scientist; BBB Pharmacologist</td></tr>
+          <tr><td>C. Translational Biology</td><td>HER2+ brain metastasis PDOs; immunocompetent mouse models</td><td>PDO/Organoid Specialist; Pre-Clinical In Vivo Pharmacologist</td></tr>
+          <tr><td>D. Regulatory & Clinical</td><td>SaMD classification (GMLP); Phase I/IIa trial design</td><td>Regulatory Affairs Specialist; Clinical Neuro-Oncologist</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Contact & Collaboration -->
+  <section id="contact" class="section-blue-light">
+    <div class="container">
+      <h2>🤝 Join the Consortium – We Are Seeking</h2>
+      <div class="card-grid">
+        <div class="card"><strong>🧑‍🏫 Supervisor</strong><br>Neuro-oncology / Computational Biology / Nanomedicine</div>
+        <div class="card"><strong>🧬 Clinical Collaborators</strong><br>Brain metastasis biopsies, PDOs, humanised PDX models</div>
+        <div class="card"><strong>💰 Funders & Industry Partners</strong><br>Non-dilutive grants, equity-free support, co-development</div>
+      </div>
+      <div style="background: white; border-radius: 24px; padding: 32px; margin-top: 24px;">
+        <h3>✉️ Contact</h3>
+        <p><strong>Name:</strong> [Your Full Name]</p>
+        <p><strong>Affiliation:</strong> C.O.M.E.T. LABS (Center for Optimized Molecular Engineering & Therapeutics) – Start-up (founding stage) | MD/PhD Candidate, Faculty of Medicine</p>
+        <p><strong>Email:</strong> <a href="tetteynissi399@gmail.com">your.email@university.edu</a> (replace with your actual email)</p>
+        <p><strong>GitHub / LinkedIn / ORCID:</strong> Available upon request</p>
+        <p><em>Full thesis blueprint (100+ pages), slide deck, and funding prospectus available under NDA/CC-BY.</em></p>
+        <div style="margin-top: 20px;">
+          <a href="#" class="btn-primary" style="background-color: #008080;">📄 Request Blueprint PDF</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strategic Roadmap -->
+  <section class="section-light">
+    <div class="container">
+      <h2>📅 36-Month Strategic Roadmap (Chapter 7.2)</h2>
+      <div class="timeline-phase">
+        <div class="phase"><strong>Year 1</strong><br>Consortium building, Phase I benchmark, PDO line development, provisional patents</div>
+        <div class="phase"><strong>Year 2</strong><br>Phase II PoC, LNP optimisation, pre-IND consultation, PDX study initiation</div>
+        <div class="phase"><strong>Year 3</strong><br>IND preparation, IND submission, Phase I/IIa trial design</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div style="display: flex
